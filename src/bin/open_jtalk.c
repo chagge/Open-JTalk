@@ -218,8 +218,7 @@ static void usage()
    fprintf(stderr,
            "    -z  i          : audio buffer size (if i==0, turn off)                   [    0][   0--    ]\n");
    fprintf(stderr, "  infile:\n");
-   fprintf(stderr,
-           "    text file                                                                [stdin]\n");
+   fprintf(stderr, "    text file                                                                [stdin]\n");
    fprintf(stderr, "\n");
 
    exit(0);
