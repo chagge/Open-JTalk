@@ -473,6 +473,8 @@ static const char *njd_set_pronunciation_symbol_list[] = {
    NULL, NULL
 };
 
+#define NJD_SET_PRONUNCIATION_FILLER "\xa5\xd5\xa5\xa3\xa5\xe9\xa1\xbc"
+
 #define NJD_SET_PRONUNCIATION_U        "\xa5\xa6"
 #define NJD_SET_PRONUNCIATION_DOUSHI   "\xc6\xb0\xbb\xec"
 #define NJD_SET_PRONUNCIATION_JODOUSHI "\xbd\xf5\xc6\xb0\xbb\xec"

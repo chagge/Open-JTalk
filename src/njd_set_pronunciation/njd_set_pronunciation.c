@@ -93,6 +93,10 @@ void njd_set_pronunciation(NJD * njd)
                   pos++;
                }
             }
+            NJDNode_set_pos(node, NJD_SET_PRONUNCIATION_FILLER);
+            NJDNode_set_pos_group1(node, NULL);
+            NJDNode_set_pos_group2(node, NULL);
+            NJDNode_set_pos_group3(node, NULL);
          }
       }
    }

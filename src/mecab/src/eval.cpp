@@ -101,7 +101,11 @@ class Eval {
     if (!param.open(argc, argv, long_options)) {
       std::cout << param.what() << "\n\n" <<  COPYRIGHT
                 << "\ntry '--help' for more information." << std::endl;
+#if 1 /* for Open JTalk */
+      return false;
+#else
       return -1;
+#endif
     }
 
     if (!param.help_version()) return 0;
@@ -110,7 +114,11 @@ class Eval {
     if (files.size() < 2) {
       std::cout << "Usage: " <<
           param.program_name() << " output answer" << std::endl;
+#if 1 /* for Open JTalk */
+      return false;
+#else
       return -1;
+#endif
     }
 
     std::string output = param.get<std::string>("output");

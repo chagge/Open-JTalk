@@ -85,8 +85,6 @@ void NJD_load(NJD * njd, const char *str);
 void NJD_load_from_fp(NJD * njd, FILE * fp);
 int NJD_get_size(NJD * njd);
 void NJD_push_node(NJD * njd, NJDNode * node);
-void NJD_insert_node(NJD * njd, NJDNode * prev, NJDNode * next, NJDNode * node);
-NJDNode *NJD_remove_node(NJD * njd, NJDNode * node);
 void NJD_remove_silent_node(NJD * njd);
 void NJD_print(NJD * njd);
 void NJD_fprint(NJD * njd, FILE * fp);
